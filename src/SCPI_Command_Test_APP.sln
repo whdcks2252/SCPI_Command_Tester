@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCPI_Command_Test_APP", "SCPI_Command_Test_APP\SCPI_Command_Test_APP.csproj", "{8E6AEB93-8E48-474E-BE26-73EA7457B640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP_Lib", "TCP_Lib\TCP_Lib.csproj", "{51207209-DD58-4EC5-AB9D-8CD75353675C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E6AEB93-8E48-474E-BE26-73EA7457B640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E6AEB93-8E48-474E-BE26-73EA7457B640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E6AEB93-8E48-474E-BE26-73EA7457B640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E6AEB93-8E48-474E-BE26-73EA7457B640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51207209-DD58-4EC5-AB9D-8CD75353675C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51207209-DD58-4EC5-AB9D-8CD75353675C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51207209-DD58-4EC5-AB9D-8CD75353675C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51207209-DD58-4EC5-AB9D-8CD75353675C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4748BDCB-36F8-4754-89FE-A6CAB6DACC93}
+	EndGlobalSection
+EndGlobal

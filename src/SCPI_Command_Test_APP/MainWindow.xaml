@@ -31,8 +31,8 @@
                         </StackPanel>
                     </Grid>
                 </Border>
-                <StackPanel  Grid.Row="1" Grid.RowSpan="2">
-                    <Expander>
+                <DockPanel  Grid.Row="1" Grid.RowSpan="2">
+                    <Expander DockPanel.Dock="Top">
                         <Expander.Header>
                             <TextBlock TextAlignment="Center">Command</TextBlock>
                         </Expander.Header>
@@ -69,10 +69,6 @@
                                         <ToggleButton VerticalAlignment="Center" Margin="13,0,0,0" Command="{Binding ALCChangeCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Self}, Path=IsChecked}" Cursor="Hand" >Off</ToggleButton>
                                     </StackPanel>
                                     <StackPanel Margin="5" Orientation="Horizontal">
-                                        <TextBlock VerticalAlignment="Center" Text="Atten Hold On_OFF "/>
-                                        <ToggleButton VerticalAlignment="Center" Margin="13,0,0,0" Command="{Binding AttenHoldChangeCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Self}, Path=IsChecked}" Cursor="Hand" >Off</ToggleButton>
-                                    </StackPanel>
-                                    <StackPanel Margin="5" Orientation="Horizontal">
                                         <TextBlock VerticalAlignment="Center" Text="Arb On_OFF "/>
                                         <ToggleButton VerticalAlignment="Center" Margin="13,0,0,0" Command="{Binding ArbChangeCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Self}, Path=IsChecked}" Cursor="Hand" >Off</ToggleButton>
                                     </StackPanel>
@@ -80,13 +76,13 @@
                             </Grid>
                         </Border>
                     </Expander>
-                    <DataGrid  MaxHeight="500" Name="dataGrid1" ItemsSource="{Binding LogList}" AutoGenerateColumns="False" IsReadOnly="True"  CanUserSortColumns="False" >
+                    <DataGrid   Name="dataGrid1" ItemsSource="{Binding LogList}" AutoGenerateColumns="False" IsReadOnly="True"  CanUserSortColumns="False" >
                         <DataGrid.Columns>
                             <DataGridTextColumn  Header="Time" Width="200" Binding="{Binding Path=TimeLog}"/>
                             <DataGridTextColumn  Header="DataLog" Width="400" Binding="{Binding Path=DataLog}"/>
                         </DataGrid.Columns>
                     </DataGrid>
-                </StackPanel>
+                </DockPanel>
             </Grid>
         </materialDesign:Card>
     </Grid>

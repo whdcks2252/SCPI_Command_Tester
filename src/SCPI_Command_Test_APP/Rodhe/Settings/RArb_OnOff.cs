@@ -4,8 +4,8 @@ namespace SCPI_Command_Test_APP.Rodhe.Settings
 {
     public class RArb_OnOff : ISGCommand
     {
-        private static string ArbOnCommand { get; } = ":SOURce:RADio:ARB:STATe ON";
-        private static string ArbOFFCommand { get; } = ":SOURce:RADio:ARB:STATe OFF";
+        private static string ArbOnCommand { get; } = "SOURce1:BB:ARBitrary:STATe ON";
+        private static string ArbOFFCommand { get; } = "SOURce1:BB:ARBitrary:STATe OFF";
 
         private string Command { get; }
 

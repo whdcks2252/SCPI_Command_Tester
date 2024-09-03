@@ -173,25 +173,7 @@ namespace SCPI_Command_Test_APP
                 LogMarker.Info("ALC Off  완료");
             }
         }
-        [RelayCommand(IncludeCancelCommand = true)]
-        private async Task AttenHoldChange(object o, CancellationToken token)
-        {
-            if (iSGConnection is null) { MessageBox.Show("SG 미연결"); return; }
-            if (!iSGConnection.IsConnect()) { MessageBox.Show("SG 미연결"); return; }
-            bool flag = (bool)o;
-            if (flag)
-            {
-                LogMarker.Info("ALC On  전송  ");
-                await iSGConnection.ChangeAttenHold(flag, token);
-                LogMarker.Info("ALC On  완료");
-            }
-            if (!flag)
-            {
-                LogMarker.Info("ALC Off  전송  ");
-                await iSGConnection.ChangeAttenHold(flag, token);
-                LogMarker.Info("ALC Off  완료");
-            }
-        }
+
         [RelayCommand(IncludeCancelCommand = true)]
         private async Task ArbChange(object o, CancellationToken token)
         {

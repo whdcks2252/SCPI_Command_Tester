@@ -4,8 +4,8 @@ namespace SCPI_Command_Test_APP.Rodhe.Settings
 {
     internal class RMod_OnOff : ISGCommand
     {
-        private static string ModOnCommand { get; } = ":OUTPut:MODulation ON";
-        private static string ModOffCommand { get; } = ":OUTPut:MODulation OFF";
+        private static string ModOnCommand { get; } = ":MODulation:ALL:STATe ON";
+        private static string ModOffCommand { get; } = ":MODulation:ALL:STATe OFF";
 
         private string Command { get; }
 

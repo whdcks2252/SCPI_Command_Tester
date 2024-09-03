@@ -13,7 +13,6 @@
         public Task ChangeRF(bool onoff, CancellationToken token);
         public Task ChangeMod(bool onoff, CancellationToken token);
         public Task ChangeALC(bool onoff, CancellationToken token);
-        public Task ChangeAttenHold(bool onoff, CancellationToken token);
         public Task ChangeArb(bool onoff, CancellationToken token);
 
 

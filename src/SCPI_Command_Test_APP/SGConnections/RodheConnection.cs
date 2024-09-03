@@ -21,9 +21,6 @@ namespace SCPI_Command_Test_APP.SGConnections
             LogMarker.Info("SG ALC OFF");
             await connection.SendMessage(RAmplitudeALC_OnOff.SetALCOff(), token);
 
-            LogMarker.Info("SG AttenHold ON");
-            await connection.SendMessage(RAttenHold_OnOff.SetAttenHoldOn(), token);
-
             LogMarker.Info("SG RF On");
             await connection.SendMessage(RRF_OnOff.SetRFOn(), token);
 
@@ -147,20 +144,6 @@ namespace SCPI_Command_Test_APP.SGConnections
             if (!onoff)
             {
                 await connection.SendMessage(RAmplitudeALC_OnOff.SetALCOff(), token);
-                return;
-            }
-        }
-
-        public async Task ChangeAttenHold(bool onoff, CancellationToken token)
-        {
-            if (onoff)
-            {
-                await connection.SendMessage(RAttenHold_OnOff.SetAttenHoldOn(), token);
-                return;
-            }
-            if (!onoff)
-            {
-                await connection.SendMessage(RAttenHold_OnOff.SetAttenHoldOff(), token);
                 return;
             }
         }
